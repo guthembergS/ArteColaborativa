@@ -1,14 +1,12 @@
 
 package br.com.artecolaborativa.model;
 
-import com.sun.istack.internal.NotNull;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import static javax.swing.text.StyleConstants.Size;
 
 /**
  *
@@ -22,15 +20,12 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long idUsuario;
 
-    @NotNull
     @Column(name = "nome")
     protected String nome;
 
-    @NotNull
     @Column(name = "senha")
     protected String senha;
 
-    @NotNull
     @Column(name = "email")
     protected String email;
 
