@@ -1,13 +1,11 @@
 package br.com.artecolaborativa.model;
 
-import com.sun.istack.internal.NotNull;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import static javax.swing.text.StyleConstants.Size;
 
 /**
  *
@@ -20,19 +18,15 @@ public class Endereco implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long idEndereco;
         
-    @NotNull
     @Column(name = "LOGADOURO")
     protected String logadouro;
 
-    @NotNull
     @Column(name = "BAIRRO")
     protected String bairro;
     
-    @NotNull
     @Column(name = "CIDADE")
     protected String cidade;
     
-    @NotNull
     @Column(name = "ESTADO")
     protected String estado;
 

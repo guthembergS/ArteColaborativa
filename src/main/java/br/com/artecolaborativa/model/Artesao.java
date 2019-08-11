@@ -25,7 +25,7 @@ public class Artesao extends Usuario implements Serializable{
         return produtos;
     }
 
-    public boolean setProdutos(Produto produtos) {
-        return this.produtos.add(produtos);
+    public boolean setProdutos(Produto produto) {
+        return this.produtos.add(produto);
     }
 }
