@@ -17,7 +17,7 @@ import javax.persistence.OneToMany;
 @DiscriminatorValue(value = "A")
 public class Artesao extends Usuario implements Serializable{
     
-    @OneToMany(mappedBy = "ARTESAO", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "artesao", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     protected List<Produto> produtos = new ArrayList<>();
 
     

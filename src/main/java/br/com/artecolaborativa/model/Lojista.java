@@ -24,7 +24,7 @@ public class Lojista extends Usuario implements Serializable{
                 @JoinColumn(name = "ID_ARTESAO", referencedColumnName = "ID_USUARIO", nullable = false)
             }
     )
-    public List<Artesao> pratos = new ArrayList<Artesao>(); 
+    public List<Artesao> artesaos = new ArrayList<Artesao>(); 
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, optional = true)
     @JoinColumn(name = "ID_ENDERECO", referencedColumnName = "ID_ENDERECO")
@@ -58,5 +58,13 @@ public class Lojista extends Usuario implements Serializable{
 
     public Double getTaxaVenda() {
         return taxaVenda;
+    }
+    
+    public List<Artesao> getArtesaos() {
+        return artesaos;
+    }
+
+    public boolean setArtesaos(Artesao artesao) {
+        return this.artesaos.add(artesao);
     }
 }
