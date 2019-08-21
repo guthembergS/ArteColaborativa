@@ -1,4 +1,3 @@
-
 package br.com.artecolaborativa.model;
 
 import java.io.Serializable;

@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -15,6 +17,8 @@ import javax.persistence.OneToOne;
  *
  * @author guthemberg.souza
  */
+@Entity
+@DiscriminatorValue(value = "L")
 public class Lojista extends Usuario implements Serializable{
     
     @ManyToMany(fetch = FetchType.LAZY)

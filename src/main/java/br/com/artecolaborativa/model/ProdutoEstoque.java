@@ -37,7 +37,7 @@ public class ProdutoEstoque implements Serializable{
     @JoinColumn(name = "ID_LOJISTA", referencedColumnName = "ID_USUARIO",nullable = false )
     protected Lojista lojista;
     
-    @Column()
+    @Column(name = "QUANTIDADE")
     protected Long quantidade;
     
     public void setProduto(Produto produto){

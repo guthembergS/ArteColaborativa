@@ -6,24 +6,24 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-
-
 /**
  *
  * @author guto
  */
 public class TestMain {
+
     public static void main(String[] args) {
-        
+
         Artesao usuario1 = new Artesao();
-        
+
         usuario1.setNome("Moema Souza");
         usuario1.setEmail("m.souza@mail.com");
         usuario1.setSenha("123456");
-        
+
         EntityManagerFactory emf = null;
         EntityManager em = null;
         EntityTransaction et;
+
         try {
             //EntityManagerFactory realiza a leitura das informações relativas à "persistence-unit".
             emf = Persistence.createEntityManagerFactory("arte_colaborativa");
@@ -41,6 +41,5 @@ public class TestMain {
             }
         }
     }
-    
-    
+
 }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+            
+    <!-- Lista de Produtos Artesão ID 1 -->
+    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="1"/>
+    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="1"/>
+    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="1"/>
+    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="1"/>
+    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="1"/>
+   
+    <!-- Lista de Produtos Artesão ID 2 -->
+    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="2"/>
+    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="2"/>
+    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="2"/>
+    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="2"/>
+    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="2"/>
+   
+    <!-- Lista de Produtos Artesão ID 3 -->
+    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="3"/>
+    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="3"/>
+    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="3"/>
+    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="3"/>
+    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="3"/>
+   
+    <!-- Lista de Produtos Artesão ID 4 -->
+    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="4"/>
+    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="4"/>
+    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="4"/>
+    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="4"/>
+    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="4"/>
+   
+    <!-- Lista de Produtos Artesão ID 5 -->    
+    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="5"/>
+    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="5"/>
+    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="5"/>
+    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="5"/>
+    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="5"/>
+   
+    <!-- Endereços -->
+    <!-- Lojista 1 -->   
+    <ENDERECO BAIRRO="Boa Vista" CEP="51335140" CIDADE="Recife" ESTADO="PE" LOGADOURO="3ª Travessa Arsênio Calaça"/>
+    <!-- Lojista 2 -->
+    <ENDERECO BAIRRO="Recife" CEP="50761063" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Jornalista Ponte Jardim"/>
+    
+    <!-- Estoque -->
+    <!-- Estoque Lojista 1-->
+    <PRODUTO ID_PRODUTO="" QUANTIDADE="10" DESCRICAO="" PRECO="" ID_ARTESAO=""/>
+    <!-- Estoque Lojista 2-->
+    <PRODUTO ID_PRODUTO="" QUANTIDADE="10" DESCRICAO="" PRECO="" ID_ARTESAO=""/>
+    
+    <!-- Usuários  -->
+    
+    <!-- Lojista -->
+    <!-- 1 --> 
+    <USUARIO DTYPE="L" EMAIL="lojista1@gmail.com" NOME="Cicrano" SENHA="coxinha123"/> 
+    <!-- 2 --> 
+    <USUARIO DTYPE="L" EMAIL="lojista2@gmail.com" NOME="Fulano" SENHA="maeterra"/>    
+    <!-- Artesão -->
+    <!-- 1 --> 
+    <USUARIO DTYPE="A" EMAIL="artesao1@gmail.com" NOME="Moema Souza" SENHA="coxinha123"/>
+    <!-- 2 --> 
+    <USUARIO DTYPE="A" EMAIL="artesao2@gmail.com" NOME="Guthemberg Souza" SENHA="coxinha1xx"/>
+    <!-- 3 --> 
+    <USUARIO DTYPE="A" EMAIL="artesao3@gmail.com" NOME="Thiago Antonio" SENHA="coxinhaxxx"/>
+    <!-- 4 -->     
+    <USUARIO DTYPE="A" EMAIL="artesao4@gmail.com" NOME="Antonella Silva" SENHA="coxinha123xx"/>
+    <!-- 5 --> 
+    <USUARIO DTYPE="A" EMAIL="artesao5@gmail.com" NOME="Severina Silva" SENHA="coxinha1234"/>
+    
+    <!-- Vendas -->
+    <!-- Lojista 1 -->    
+    <VENDAS />
+    <!-- Lojista 2 -->
+    <VENDAS />
+         
+</dataset>

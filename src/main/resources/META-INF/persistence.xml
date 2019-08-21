@@ -6,6 +6,9 @@
     <class>br.com.artecolaborativa.model.Endereco</class>
     <class>br.com.artecolaborativa.model.Usuario</class>
     <class>br.com.artecolaborativa.model.Produto</class>
+    <class>br.com.artecolaborativa.model.Lojista</class>
+    <class>br.com.artecolaborativa.model.ProdutoEstoque</class>
+    <class>br.com.artecolaborativa.model.VendaLojistaProduto</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/arte_colaborativa"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
