@@ -2,39 +2,39 @@
 <dataset>
             
     <!-- Lista de Produtos Artesão ID 1 -->
-    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="1"/>
-    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="1"/>
-    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="1"/>
-    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="1"/>
-    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="1"/>
+    <PRODUTO ID_PRODUTO="1" DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="1"/>
+    <PRODUTO ID_PRODUTO="2" DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="1"/>
+    <PRODUTO ID_PRODUTO="3" DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="1"/>
+    <PRODUTO ID_PRODUTO="4" DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="1"/>
+    <PRODUTO ID_PRODUTO="5" DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="1"/>
    
     <!-- Lista de Produtos Artesão ID 2 -->
-    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="2"/>
-    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="2"/>
-    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="2"/>
-    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="2"/>
-    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="2"/>
+    <PRODUTO ID_PRODUTO="6" DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="2"/>
+    <PRODUTO ID_PRODUTO="7" DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="2"/>
+    <PRODUTO ID_PRODUTO="8" DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="2"/>
+    <PRODUTO ID_PRODUTO="9" DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="2"/>
+    <PRODUTO ID_PRODUTO="10" DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="2"/>
    
     <!-- Lista de Produtos Artesão ID 3 -->
-    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="3"/>
-    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="3"/>
-    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="3"/>
-    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="3"/>
-    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="3"/>
+    <PRODUTO ID_PRODUTO="11" DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="3"/>
+    <PRODUTO ID_PRODUTO="12" DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="3"/>
+    <PRODUTO ID_PRODUTO="13" DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="3"/>
+    <PRODUTO ID_PRODUTO="14" DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="3"/>
+    <PRODUTO ID_PRODUTO="15" DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="3"/>
    
     <!-- Lista de Produtos Artesão ID 4 -->
-    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="4"/>
-    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="4"/>
-    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="4"/>
-    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="4"/>
-    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="4"/>
+    <PRODUTO ID_PRODUTO="16" DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="4"/>
+    <PRODUTO ID_PRODUTO="17" DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="4"/>
+    <PRODUTO ID_PRODUTO="18" DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="4"/>
+    <PRODUTO ID_PRODUTO="19" DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="4"/>
+    <PRODUTO ID_PRODUTO="20" DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="4"/>
    
     <!-- Lista de Produtos Artesão ID 5 -->    
-    <PRODUTO DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="5"/>
-    <PRODUTO DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="5"/>
-    <PRODUTO DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="5"/>
-    <PRODUTO DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="5"/>
-    <PRODUTO DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="5"/>
+    <PRODUTO ID_PRODUTO="21" DESCRICAO="Brinco de Quenga" PRECO="4,00" ID_ARTESAO="5"/>
+    <PRODUTO ID_PRODUTO="22" DESCRICAO="Colar Trançado" PRECO="10,00" ID_ARTESAO="5"/>
+    <PRODUTO ID_PRODUTO="23" DESCRICAO="Árvore dos Sonhos" PRECO="55,00" ID_ARTESAO="5"/>
+    <PRODUTO ID_PRODUTO="24" DESCRICAO="Anel de Corda" PRECO="2,00" ID_ARTESAO="5"/>
+    <PRODUTO ID_PRODUTO="25" DESCRICAO="Anel de Quenga" PRECO="3,00" ID_ARTESAO="5"/>
    
     <!-- Endereços -->
     <!-- Lojista 1 -->   
@@ -44,33 +44,52 @@
     
     <!-- Estoque -->
     <!-- Estoque Lojista 1-->
-    <PRODUTO ID_PRODUTO="" QUANTIDADE="10" DESCRICAO="" PRECO="" ID_ARTESAO=""/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="1" ID_PRODUTO="1" ID_LOJISTA="1" QUANTIDADE="10" ID_ARTESAO="1"/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="2" ID_PRODUTO="2" ID_LOJISTA="1" QUANTIDADE="10" ID_ARTESAO="1"/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="3" ID_PRODUTO="3" ID_LOJISTA="1" QUANTIDADE="10" ID_ARTESAO="1"/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="4" ID_PRODUTO="4" ID_LOJISTA="1" QUANTIDADE="10" ID_ARTESAO="1"/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="5" ID_PRODUTO="5" ID_LOJISTA="1" QUANTIDADE="10" ID_ARTESAO="1"/>        
+       
     <!-- Estoque Lojista 2-->
-    <PRODUTO ID_PRODUTO="" QUANTIDADE="10" DESCRICAO="" PRECO="" ID_ARTESAO=""/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="6" ID_PRODUTO="6" ID_LOJISTA="2" QUANTIDADE="10" ID_ARTESAO="2"/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="7" ID_PRODUTO="7" ID_LOJISTA="2" QUANTIDADE="10" ID_ARTESAO="2"/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="8" ID_PRODUTO="8" ID_LOJISTA="2" QUANTIDADE="10" ID_ARTESAO="2"/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="9" ID_PRODUTO="9" ID_LOJISTA="2" QUANTIDADE="10" ID_ARTESAO="2"/>
+    <PRODUTO_ESTOQUE ID_PRODUTO_ESTOQUE="10" ID_PRODUTO="10" ID_LOJISTA="2" QUANTIDADE="10" ID_ARTESAO="2"/>
     
     <!-- Usuários  -->
-    
+        
     <!-- Lojista -->
     <!-- 1 --> 
-    <USUARIO DTYPE="L" EMAIL="lojista1@gmail.com" NOME="Cicrano" SENHA="coxinha123"/> 
+    <USUARIO ID_USUARIO="1" DTYPE="L" EMAIL="lojista1@gmail.com" NOME="Cicrano" SENHA="coxinha123"/> 
     <!-- 2 --> 
-    <USUARIO DTYPE="L" EMAIL="lojista2@gmail.com" NOME="Fulano" SENHA="maeterra"/>    
+    <USUARIO ID_USUARIO="2" DTYPE="L" EMAIL="lojista2@gmail.com" NOME="Fulano" SENHA="maeterra"/>    
+    
     <!-- Artesão -->
     <!-- 1 --> 
-    <USUARIO DTYPE="A" EMAIL="artesao1@gmail.com" NOME="Moema Souza" SENHA="coxinha123"/>
-    <!-- 2 --> 
-    <USUARIO DTYPE="A" EMAIL="artesao2@gmail.com" NOME="Guthemberg Souza" SENHA="coxinha1xx"/>
+    <USUARIO ID_USUARIO="3" DTYPE="A" EMAIL="artesao1@gmail.com" NOME="Moema Souza" SENHA="coxinha123"/>
+    <!-- 2 -->
+    <USUARIO ID_USUARIO="4" DTYPE="A" EMAIL="artesao2@gmail.com" NOME="Guthemberg Souza" SENHA="coxinha1xx"/>
     <!-- 3 --> 
-    <USUARIO DTYPE="A" EMAIL="artesao3@gmail.com" NOME="Thiago Antonio" SENHA="coxinhaxxx"/>
+    <USUARIO ID_USUARIO="5" DTYPE="A" EMAIL="artesao3@gmail.com" NOME="Thiago Antonio" SENHA="coxinhaxxx"/>
     <!-- 4 -->     
-    <USUARIO DTYPE="A" EMAIL="artesao4@gmail.com" NOME="Antonella Silva" SENHA="coxinha123xx"/>
+    <USUARIO ID_USUARIO="6" DTYPE="A" EMAIL="artesao4@gmail.com" NOME="Antonella Silva" SENHA="coxinha123xx"/>
     <!-- 5 --> 
-    <USUARIO DTYPE="A" EMAIL="artesao5@gmail.com" NOME="Severina Silva" SENHA="coxinha1234"/>
+    <USUARIO ID_USUARIO="7" DTYPE="A" EMAIL="artesao5@gmail.com" NOME="Severina Silva" SENHA="coxinha1234"/>
     
     <!-- Vendas -->
     <!-- Lojista 1 -->    
-    <VENDAS />
-    <!-- Lojista 2 -->
-    <VENDAS />
+    <VENDAS ID_VENDA_LOJISTA="1" ID_ESTOQUE="1" DATA_VENDA="2022-04-10" QUANTIDADE="6"/>
+    <VENDAS ID_VENDA_LOJISTA="2" ID_ESTOQUE="2" DATA_VENDA="2022-04-10" QUANTIDADE="2"/>
+    <VENDAS ID_VENDA_LOJISTA="3" ID_ESTOQUE="3" DATA_VENDA="2022-04-10" QUANTIDADE="5"/>
+    <VENDAS ID_VENDA_LOJISTA="4" ID_ESTOQUE="4" DATA_VENDA="2022-04-10" QUANTIDADE="3"/>
+    <VENDAS ID_VENDA_LOJISTA="5" ID_ESTOQUE="5" DATA_VENDA="2022-04-10" QUANTIDADE="2"/>
+    
+    <!-- Lojista 2 -->    
+    <VENDAS ID_VENDA_LOJISTA="6" ID_ESTOQUE="1" DATA_VENDA="2022-04-10" QUANTIDADE="1"/>
+    <VENDAS ID_VENDA_LOJISTA="7" ID_ESTOQUE="2" DATA_VENDA="2022-04-10" QUANTIDADE="2"/>
+    <VENDAS ID_VENDA_LOJISTA="8" ID_ESTOQUE="3" DATA_VENDA="2022-04-10" QUANTIDADE="3"/>
+    <VENDAS ID_VENDA_LOJISTA="9" ID_ESTOQUE="4" DATA_VENDA="2022-04-10" QUANTIDADE="1"/>
+    <VENDAS ID_VENDA_LOJISTA="10" ID_ESTOQUE="5" DATA_VENDA="2022-04-10" QUANTIDADE="2"/>
          
 </dataset>
