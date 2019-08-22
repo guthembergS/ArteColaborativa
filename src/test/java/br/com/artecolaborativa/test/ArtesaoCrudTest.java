@@ -1,10 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.artecolaborativa.test;
 
+import br.com.artecolaborativa.model.Artesao;
+import javax.persistence.CacheRetrieveMode;
+import javax.persistence.TypedQuery;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -16,22 +14,26 @@ public class ArtesaoCrudTest extends GenericTest {
 
     @Test
     public void createArtesao() {
+        logger.info("Executando createArtesao()");
 
+        String nome = "Thiago Antonio";
+        String senha = "123456";
+        String email = "thiago.antonio@mail.com";
+       
+        Artesao artesao = new Artesao();
+        artesao.setNome(nome);
+        artesao.setEmail(email);
+        artesao.setSenha(senha);
+        
+        em.persist(artesao);
+        em.flush();
+
+        TypedQuery<Artesao> queryArtesao = em.createNamedQuery("Artesao.PorNome", Artesao.class);
+        queryArtesao.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
+        queryArtesao.setParameter("nome", nome);
+
+        assertNotNull(queryArtesao.getSingleResult());
     }
 
-    @Test
-    public void readArtesao() {
-
-    }
-
-    @Test
-    public void updateArtesao() {
-
-    }
-
-    @Test
-    public void deleteArtesao() {
-
-    }
-
+    
 }
