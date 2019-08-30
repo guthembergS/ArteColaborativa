@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -32,6 +33,8 @@ public class Artesao extends Usuario implements Serializable{
     @OneToMany(mappedBy = "artesao", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     protected List<Produto> produtos = new ArrayList<>();
 
+    @Column(name="MARCA")
+    protected String marca;
     
     public List<Produto> getProdutos() {
         return produtos;
@@ -39,5 +42,13 @@ public class Artesao extends Usuario implements Serializable{
 
     public boolean setProdutos(Produto produto) {
         return this.produtos.add(produto);
+    }
+    
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String nomeMarca) {
+        this.marca = nomeMarca;
     }
 }

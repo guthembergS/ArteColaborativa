@@ -17,6 +17,7 @@ public class ArtesaoCrudTest extends GenericTest {
         logger.info("Executando createArtesao()");
 
         String nome = "Thiago Antonio";
+        String marca = "App Arts";
         String senha = "123456";
         String email = "thiago.antonio@mail.com";
        
@@ -24,6 +25,7 @@ public class ArtesaoCrudTest extends GenericTest {
         artesao.setNome(nome);
         artesao.setEmail(email);
         artesao.setSenha(senha);
+        artesao.setMarca(marca);
         
         em.persist(artesao);
         em.flush();

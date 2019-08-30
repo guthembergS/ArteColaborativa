@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  *
@@ -29,11 +31,12 @@ public class VendaLojistaProduto implements Serializable{
     @JoinColumn(name = "ID_ESTOQUE", referencedColumnName = "ID_PRODUTO_ESTOQUE",nullable = false )
     protected ProdutoEstoque produtoEstoque;
     
+    @Temporal(TemporalType.DATE)
     @Column(name="DATA_VENDA")
     protected Date dataVenda;
     
     @Column(name="QUANTIDADE")
-    protected Integer quantidade;
+    protected Long quantidade;
     
     public Long getIdVenda(){
         return idVendaLojista;
@@ -53,5 +56,13 @@ public class VendaLojistaProduto implements Serializable{
     
     public void setProdutoEstoque(ProdutoEstoque produtoEstoque){
         this.produtoEstoque = produtoEstoque;
+    }
+    
+    public void setQuantidade(Long quant){
+        this.quantidade = quant;
+    }
+    
+    public Long getQuantidade(){
+        return quantidade;
     }
 }

@@ -36,7 +36,7 @@ public class GenericTest {
         logger.setLevel(Level.INFO);
         //logger.setLevel(Level.SEVERE);
         emf = Persistence.createEntityManagerFactory("arte_colaborativa");
-        //DbUnitUtil.inserirDados();
+        DbUnitUtil.inserirDados();
     }
 
     @AfterClass

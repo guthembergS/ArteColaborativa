@@ -20,13 +20,13 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long idUsuario;
 
-    @Column(name = "nome")
+    @Column(name = "NOME")
     protected String nome;
 
-    @Column(name = "senha")
+    @Column(name = "SENHA")
     protected String senha;
 
-    @Column(name = "email")
+    @Column(name = "EMAIL")
     protected String email;
 
     public void setEmail(String email) {
