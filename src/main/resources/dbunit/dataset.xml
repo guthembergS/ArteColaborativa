@@ -2,9 +2,11 @@
 <dataset>
     <!-- Endereços -->
     <!-- Lojista 1 -->   
-    <ENDERECO ID_ENDERECO="1" BAIRRO="Boa Vista" CEP="51335140" CIDADE="Recife" ESTADO="PE" LOGADOURO="3ª Travessa Arsênio Calaça"/>
+    <ENDERECO ID_ENDERECO="1" BAIRRO="Boa Vista" CEP="51335140" CIDADE="Recife" ESTADO="PE" LOGADOURO="3ª Travessa Arsênio Calaça" NUMERO="399"/>
     <!-- Lojista 2 -->
-    <ENDERECO ID_ENDERECO="2" BAIRRO="Apipucos" CEP="50761063" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Jornalista Ponte Jardim"/>
+    <ENDERECO ID_ENDERECO="2" BAIRRO="Apipucos" CEP="50761063" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Jornalista Ponte Jardim" NUMERO="31" />
+    <!-- Lojista 3 -->
+    <ENDERECO ID_ENDERECO="3" BAIRRO="Iputinga" CEP="50721440" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Estér Foigel" NUMERO="166"/>
     
     <!-- Usuários  -->    
     <!-- Lojista -->
@@ -22,6 +24,9 @@
     <USUARIO ID_USUARIO="5" DTYPE="A" EMAIL="ana.arts@gmail.com" NOME="Ana Ribeiro" SENHA="ana123" MARCA="Fulô Arts"/>
     <!-- 6 -->     
     <USUARIO ID_USUARIO="6" DTYPE="A" EMAIL="ojuara@gmail.com" NOME="Ojuara Silva" SENHA="ojuara123" MARCA="Ojuara Cactos"/>
+    <!-- 7 -->     
+    <USUARIO ID_USUARIO="7" DTYPE="A" EMAIL="jesse.papelaria@gmail.com" NOME="Jesse Oliveira" SENHA="papelarte" MARCA="Arte em Papel"/>
+    
     
         <!-- Lista de Produtos Artesão ID 1 -->
     <PRODUTO ID_PRODUTO="1" DESCRICAO="Brinco Rosa em Macramê" PRECO="35.00" ID_ARTESAO="3"/>
@@ -98,6 +103,7 @@
     <VENDA_LOJISTA_PRODUTO ID_VENDA_LOJISTA="5" ID_ESTOQUE="5" DATA_VENDA="2019-04-10" QUANTIDADE="1"/>
     
     <!-- Lojista 2 -->
+    
     <VENDA_LOJISTA_PRODUTO ID_VENDA_LOJISTA="6" ID_ESTOQUE="1" DATA_VENDA="2019-04-10" QUANTIDADE="1"/>
     <VENDA_LOJISTA_PRODUTO ID_VENDA_LOJISTA="7" ID_ESTOQUE="2" DATA_VENDA="2019-04-10" QUANTIDADE="2"/>
     <VENDA_LOJISTA_PRODUTO ID_VENDA_LOJISTA="8" ID_ESTOQUE="3" DATA_VENDA="2019-04-10" QUANTIDADE="2"/>
