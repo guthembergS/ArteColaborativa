@@ -32,7 +32,10 @@ public class Endereco implements Serializable{
 
     @Column(name = "CEP")
     protected String cep;
-
+    
+    @Column(name = "NUMERO")
+    protected String numero;
+    
     public String getLogadouro() {
         return logadouro;
     }
@@ -75,5 +78,13 @@ public class Endereco implements Serializable{
 
     public long getId() {
         return idEndereco;
+    }
+    
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
     }
 }
