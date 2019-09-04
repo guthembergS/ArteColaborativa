@@ -23,6 +23,10 @@ import javax.persistence.OneToMany;
             @NamedQuery(
                     name = "Artesao.PorNome",
                     query = "SELECT a FROM Artesao a WHERE a.nome = :nome"
+            ),
+            @NamedQuery(
+                    name = "Artesao.PorId",
+                    query = "SELECT a FROM Artesao a WHERE a.idUsuario = :idUsuario"
             )
         }
 )
