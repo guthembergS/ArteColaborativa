@@ -7,6 +7,8 @@
     <ENDERECO ID_ENDERECO="2" BAIRRO="Apipucos" CEP="50761063" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Jornalista Ponte Jardim" NUMERO="31" />
     <!-- Lojista 3 utilizado para teste de inserção de Lojista-->
     <ENDERECO ID_ENDERECO="3" BAIRRO="Iputinga" CEP="50721440" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Estér Foigel" NUMERO="166"/>
+    <!-- Lojista 4 utilizado para teste de inserção de Lojista-->
+    <ENDERECO ID_ENDERECO="4" BAIRRO="Imbiribeira" CEP="51190515" CIDADE="Recife" ESTADO="PE" LOGADOURO="Av. Pres. Dutra" NUMERO="298"/>
     
     <!-- Usuários  -->    
     <!-- Lojista -->
