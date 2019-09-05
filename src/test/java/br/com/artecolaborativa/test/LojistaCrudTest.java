@@ -30,7 +30,6 @@ public class LojistaCrudTest extends GenericTest {
         Double taxa = 5.0;
         Double aluguel = 50.00;
         String email = "taoalu@gmail.com";
-        String senha = "1234%%5467";
         long idEndereco = 2;
 
         //Query para buscar o endereço do lojista       
@@ -47,8 +46,6 @@ public class LojistaCrudTest extends GenericTest {
         lojista.setTaxaVenda(taxa);
         lojista.setAluguel(aluguel);
         lojista.setEndereco(endereco);
-        lojista.setEmail(email);
-        lojista.setSenha(senha);
 
         em.persist(lojista);
         em.flush();
@@ -58,74 +55,6 @@ public class LojistaCrudTest extends GenericTest {
         queryVerificaLojista.setParameter("nome", nome);
 
         assertNotNull(queryVerificaLojista.getSingleResult());
-
-    }
-
-    @Test
-    public void updateLojista() {
-
-        logger.info("Executando updateLojista()");
-
-        String email = "emailUpdateLojista@mail.com";
-
-        TypedQuery<Lojista> queryLojista = em.createNamedQuery("Lojista.PorNome", Lojista.class);
-        queryLojista.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
-        queryLojista.setParameter("nome", "Horta Intinerante");
-        Lojista lojistaAtual = (Lojista) queryLojista.getSingleResult();
-
-        assertNotNull(lojistaAtual);
-
-        lojistaAtual.setEmail(email);
-
-        em.flush();
-
-        assertEquals(queryLojista.getSingleResult().getEmail(), email);
-    }
-
-    @Test
-    public void updateLojistaMerge() {
-
-        logger.info("Executando updateLojistaMerge()");
-
-        Double vlAluguel = 80.00;
-        String senha = "ojuaracactos";
-
-        TypedQuery<Lojista> queryLojista = em.createNamedQuery("Lojista.PorNome", Lojista.class);
-        queryLojista.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
-        queryLojista.setParameter("nome", "Horta Intinerante");
-        Lojista lojistaAtual = (Lojista) queryLojista.getSingleResult();
-
-        assertNotNull(lojistaAtual);
-
-        lojistaAtual.setSenha(senha);
-        lojistaAtual.setAluguel(vlAluguel);
-
-        em.clear();
-        em.merge(lojistaAtual);
-        em.flush();
-
-        assertEquals(queryLojista.getSingleResult().getSenha(), senha);
-        assertEquals(queryLojista.getSingleResult().getAluguel(), vlAluguel);
-    }
-
-    @Test
-    public void deleteLojista() {
-
-        logger.info("Executando deleteLojista()");
-
-        long idLojista = 8;
-
-        Query queryLojista = em.createNamedQuery("Lojista.PorId", Lojista.class);
-        queryLojista.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
-        queryLojista.setParameter("idUsuario", idLojista);
-        Lojista lojistaAtual = (Lojista) queryLojista.getSingleResult();
-
-        assertNotNull(lojistaAtual);
-
-        em.remove(lojistaAtual);
-        em.flush();
-
-        assertEquals(0, queryLojista.getResultList().size());
 
     }
 
