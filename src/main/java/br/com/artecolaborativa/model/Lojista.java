@@ -11,6 +11,8 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 
 /**
@@ -19,6 +21,18 @@ import javax.persistence.OneToOne;
  */
 @Entity
 @DiscriminatorValue(value = "L")
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = "Lojista.PorNome",
+                    query = "SELECT u FROM Lojista u WHERE u.nome = :nome"
+            ),
+            @NamedQuery(
+                    name = "Lojista.PorId",
+                    query = "SELECT u FROM Lojista u WHERE u.idUsuario = :idUsuario"
+            )
+        }
+)
 public class Lojista extends Usuario implements Serializable{
     
     @ManyToMany(fetch = FetchType.LAZY)

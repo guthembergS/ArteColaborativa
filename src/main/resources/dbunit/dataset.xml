@@ -5,7 +5,7 @@
     <ENDERECO ID_ENDERECO="1" BAIRRO="Boa Vista" CEP="51335140" CIDADE="Recife" ESTADO="PE" LOGADOURO="3ª Travessa Arsênio Calaça" NUMERO="399"/>
     <!-- Lojista 2 -->
     <ENDERECO ID_ENDERECO="2" BAIRRO="Apipucos" CEP="50761063" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Jornalista Ponte Jardim" NUMERO="31" />
-    <!-- Lojista 3 -->
+    <!-- Lojista 3 utilizado para teste de inserção de Lojista-->
     <ENDERECO ID_ENDERECO="3" BAIRRO="Iputinga" CEP="50721440" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Estér Foigel" NUMERO="166"/>
     
     <!-- Usuários  -->    
