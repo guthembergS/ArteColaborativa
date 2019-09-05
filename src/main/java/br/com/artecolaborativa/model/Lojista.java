@@ -11,6 +11,8 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 
 /**
@@ -19,8 +21,22 @@ import javax.persistence.OneToOne;
  */
 @Entity
 @DiscriminatorValue(value = "L")
-public class Lojista extends Usuario implements Serializable{
-    
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = "Lojista.PorNome",
+                    query = "SELECT a FROM Lojista a WHERE a.nome = :nome"
+            )
+            ,
+            @NamedQuery(
+                    name = "Lojista.PorId",
+                    query = "SELECT a FROM Lojista a WHERE a.idUsuario = :idUsuario"
+            )
+        }
+)
+
+public class Lojista extends Usuario implements Serializable {
+
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "LOJISTA_ARTESAO", joinColumns = {
         @JoinColumn(name = "ID_LOJISTA", referencedColumnName = "ID_USUARIO", nullable = false)},
@@ -28,18 +44,18 @@ public class Lojista extends Usuario implements Serializable{
                 @JoinColumn(name = "ID_ARTESAO", referencedColumnName = "ID_USUARIO", nullable = false)
             }
     )
-    public List<Artesao> artesaos = new ArrayList<Artesao>(); 
+    public List<Artesao> artesaos = new ArrayList<Artesao>();
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, optional = true)
     @JoinColumn(name = "ID_ENDERECO", referencedColumnName = "ID_ENDERECO")
     protected Endereco endereco;
-    
+
     @Column(name = "VL_ALUGUEL")
     protected double aluguel;
-    
+
     @Column(name = "TAXA_VENDA")
     protected double taxaVenda;
-    
+
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
@@ -47,7 +63,7 @@ public class Lojista extends Usuario implements Serializable{
     public Endereco getEndereco() {
         return endereco;
     }
-    
+
     public void setAluguel(Double aluguel) {
         this.aluguel = aluguel;
     }
@@ -55,7 +71,7 @@ public class Lojista extends Usuario implements Serializable{
     public Double getAluguel() {
         return aluguel;
     }
-    
+
     public void setTaxaVenda(Double taxaVenda) {
         this.taxaVenda = taxaVenda;
     }
@@ -63,7 +79,7 @@ public class Lojista extends Usuario implements Serializable{
     public Double getTaxaVenda() {
         return taxaVenda;
     }
-    
+
     public List<Artesao> getArtesaos() {
         return artesaos;
     }

@@ -57,7 +57,7 @@ public class EnderecoCrudTest extends GenericTest {
         String cidade = "Abreu e Lima";
         String estado = "Pernambuco";
         String logradouro = "Rua das amelias";
-        long idEndereco = 1;
+        long idEndereco = 3;
 
         //Busca pelo endereço que será atualizado
         TypedQuery<Endereco> enderecoAntigo = em.createNamedQuery("Endereco.PorId", Endereco.class);
@@ -98,7 +98,7 @@ public class EnderecoCrudTest extends GenericTest {
         String cidade = "Abreu e Lima";
         String estado = "Pernambuco";
         String logradouro = "Rua das amelias";
-        long idEndereco = 1;
+        long idEndereco = 3;
 
         //Busca pelo endereço que será atualizado
         TypedQuery<Endereco> enderecoAntigo = em.createNamedQuery("Endereco.PorId", Endereco.class);
@@ -141,9 +141,10 @@ public class EnderecoCrudTest extends GenericTest {
 
     @Test
     public void deleteEndereco() {
+        
         logger.info("Executando deleteEndereco()");
 
-        long idEndereco = 2;
+        long idEndereco = 3;
 
         TypedQuery<Endereco> queryEndereco = em.createNamedQuery("Endereco.PorId", Endereco.class);
         queryEndereco.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
