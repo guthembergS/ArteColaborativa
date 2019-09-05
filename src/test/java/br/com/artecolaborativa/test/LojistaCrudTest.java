@@ -29,6 +29,7 @@ public class LojistaCrudTest extends GenericTest {
         String nome = "Thiago Antonio";
         Double taxa = 5.0;
         Double aluguel = 50.00;
+        String email = "taoalu@gmail.com";
         long idEndereco = 2;
 
         //Query para buscar o endereço do lojista       
@@ -45,16 +46,16 @@ public class LojistaCrudTest extends GenericTest {
         lojista.setTaxaVenda(taxa);
         lojista.setAluguel(aluguel);
         lojista.setEndereco(endereco);
-                
+
         em.persist(lojista);
         em.flush();
 
-        TypedQuery<Lojista> queryVerificaLojista = em.createNamedQuery("Lojista.PorNome", Artesao.class);
+        TypedQuery<Lojista> queryVerificaLojista = em.createNamedQuery("Lojista.PorNome", Lojista.class);
         queryVerificaLojista.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
         queryVerificaLojista.setParameter("nome", nome);
 
         assertNotNull(queryVerificaLojista.getSingleResult());
 
-    }   
+    }
 
 }
