@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 /**
@@ -16,23 +18,43 @@ import javax.persistence.Table;
  * @author guto
  */
 @Entity
-@Table
+@Table(name = "PRODUTO")
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = "Produto.PorId",
+                    query = "SELECT c FROM Produto p WHERE c.idProduto = :nome"
+            )
+            ,
+            @NamedQuery(
+                    name = "Produto.PorDescricao",
+                    query = "SELECT p FROM Produto p WHERE c.descricao = :id"
+            )
+            ,
+            @NamedQuery(
+                    name = "Produto.PorIdArtesao",
+                    query = "SELECT p FROM Produto p WHERE p.idArtesao = :id"
+            )
+        }
+)
 public class Produto implements Serializable {
+
     @Id
     @Column(name = "ID_PRODUTO")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long idProduto;
-    
+
     @Column(name = "DESCRICAO")
     protected String descricao;
-    
+
     @Column(name = "PRECO")
     protected Double preco;
-    
+
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "ID_ARTESAO", referencedColumnName = "ID_USUARIO",nullable = false )
+    @JoinColumn(name = "ID_ARTESAO", referencedColumnName = "ID_USUARIO", nullable = false)
+
     protected Artesao artesao;
-    
+
     public Long getIdProduto() {
         return idProduto;
     }
@@ -44,7 +66,7 @@ public class Produto implements Serializable {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    
+
     public Double getPreco() {
         return preco;
     }
@@ -52,8 +74,7 @@ public class Produto implements Serializable {
     public void setPreco(Double preco) {
         this.preco = preco;
     }
-    
-    
+
     public Artesao getArtesao() {
         return artesao;
     }

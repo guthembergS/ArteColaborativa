@@ -14,24 +14,6 @@ import static org.junit.Assert.*;
  */
 public class ProdutoCrudTest extends GenericTest {
 
-    @Test
-    public void createProduto() {
-
-    }
-
-    @Test
-    public void readProduto() {
-
-    }
-
-    @Test
-    public void updateProduto() {
-
-    }
-
-    @Test
-    public void deleteProduto() {
-
-    }
+   
 
 }
