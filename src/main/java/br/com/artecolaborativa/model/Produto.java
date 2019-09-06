@@ -23,17 +23,17 @@ import javax.persistence.Table;
         {
             @NamedQuery(
                     name = "Produto.PorId",
-                    query = "SELECT c FROM Produto p WHERE c.idProduto = :nome"
+                    query = "SELECT p FROM Produto p WHERE c.idProduto = :idProduto"
             )
             ,
             @NamedQuery(
                     name = "Produto.PorDescricao",
-                    query = "SELECT p FROM Produto p WHERE c.descricao = :id"
+                    query = "SELECT p FROM Produto p WHERE c.descricao = :descricao"
             )
             ,
             @NamedQuery(
                     name = "Produto.PorIdArtesao",
-                    query = "SELECT p FROM Produto p WHERE p.idArtesao = :id"
+                    query = "SELECT p FROM Produto p WHERE p.idArtesao = :idArtesao"
             )
         }
 )
