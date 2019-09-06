@@ -7,6 +7,10 @@
     <ENDERECO ID_ENDERECO="2" BAIRRO="Apipucos" CEP="50761063" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Jornalista Ponte Jardim" NUMERO="31" />
     <!-- Lojista 3 -->
     <ENDERECO ID_ENDERECO="3" BAIRRO="Iputinga" CEP="50721440" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Estér Foigel" NUMERO="166"/>
+     <!-- Lojista 4 -->
+    <ENDERECO ID_ENDERECO="4" BAIRRO="Iputinga" CEP="50721440" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Estér Foigel" NUMERO="166"/>
+    <!-- Lojista 5 -->
+    <ENDERECO ID_ENDERECO="5" BAIRRO="Iputinga" CEP="50721440" CIDADE="Recife" ESTADO="PE" LOGADOURO="Rua Estér Foigel" NUMERO="166"/>
     
     <!-- Usuários  -->    
     <!-- Lojista -->
@@ -14,6 +18,8 @@
     <USUARIO ID_USUARIO="1" DTYPE="L" EMAIL="ciranda.coletiva@gmail.com" NOME="Ciranda Coletiva" SENHA="ciranda123" VL_ALUGUEL="50.00" TAXA_VENDA="20.00" ID_ENDERECO="1"/> 
     <!-- 2 --> 
     <USUARIO ID_USUARIO="2" DTYPE="L" EMAIL="horta.int@gmail.com" NOME="Horta Intinerante" SENHA="horta123" VL_ALUGUEL="30.00" TAXA_VENDA="20.00" ID_ENDERECO="2"/>    
+    <!-- 8 --> 
+    <USUARIO ID_USUARIO="8" DTYPE="L" EMAIL="usuarioDeleteLojista@gmail.com" NOME="Lojista Deletado" SENHA="horta123" VL_ALUGUEL="100.00" TAXA_VENDA="25.00" ID_ENDERECO="4"/>    
     
     <!-- Artesão -->
     <!-- 3 --> 

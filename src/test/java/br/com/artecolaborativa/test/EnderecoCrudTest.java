@@ -144,7 +144,7 @@ public class EnderecoCrudTest extends GenericTest {
         
         logger.info("Executando deleteEndereco()");
 
-        long idEndereco = 3;
+        long idEndereco = 5;
 
         TypedQuery<Endereco> queryEndereco = em.createNamedQuery("Endereco.PorId", Endereco.class);
         queryEndereco.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
