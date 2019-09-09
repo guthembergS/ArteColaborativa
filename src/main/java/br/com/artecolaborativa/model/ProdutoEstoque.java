@@ -58,7 +58,7 @@ public class ProdutoEstoque implements Serializable{
         return produto;
     }
     
-    public void setLojista(Lojista logista){
+    public void setLojista(Lojista lojista){
         this.lojista = lojista;
     }
     
