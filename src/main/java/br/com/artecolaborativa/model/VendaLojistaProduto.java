@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -20,6 +22,14 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "VENDA_LOJISTA_PRODUTO")
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = "VendaLojistaProduto.PorParametros",
+                    query = "SELECT v FROM VendaLojistaProduto v WHERE v.produtoEstoque.produto.idProduto = :idProd and v.produtoEstoque.lojista.idUsuario = :idLoj"
+            )
+        }
+)
 public class VendaLojistaProduto implements Serializable{
     
     @Id
@@ -36,7 +46,7 @@ public class VendaLojistaProduto implements Serializable{
     protected Date dataVenda;
     
     @Column(name="QUANTIDADE")
-    protected Long quantidade;
+    protected Integer quantidade;
     
     public Long getIdVenda(){
         return idVendaLojista;
@@ -58,11 +68,11 @@ public class VendaLojistaProduto implements Serializable{
         this.produtoEstoque = produtoEstoque;
     }
     
-    public void setQuantidade(Long quant){
+    public void setQuantidade(Integer quant){
         this.quantidade = quant;
     }
     
-    public Long getQuantidade(){
+    public Integer getQuantidade(){
         return quantidade;
     }
 }
