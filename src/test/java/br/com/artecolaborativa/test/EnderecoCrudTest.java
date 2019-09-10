@@ -141,7 +141,7 @@ public class EnderecoCrudTest extends GenericTest {
 
     @Test
     public void deleteEndereco() {
-        
+
         logger.info("Executando deleteEndereco()");
 
         long idEndereco = 5;

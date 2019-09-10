@@ -58,6 +58,7 @@
     <PRODUTO ID_PRODUTO="15" DESCRICAO="Jarro Pequeno Cacto C2" PRECO="20.00" ID_ARTESAO="6"/>
     <PRODUTO ID_PRODUTO="16" DESCRICAO="Jarro Médio Cacto C3" PRECO="25.00" ID_ARTESAO="6"/>
     <PRODUTO ID_PRODUTO="17" DESCRICAO="Jarro Gande Cacto C6" PRECO="40.00" ID_ARTESAO="6"/>
+    <PRODUTO ID_PRODUTO="18" DESCRICAO="Jarro Gande Cacto C7" PRECO="45.00" ID_ARTESAO="6"/>
 
     <!-- Estoque -->
     <!-- Estoque Lojista 1 - Artesao 1-->

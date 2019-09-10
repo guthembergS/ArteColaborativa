@@ -24,17 +24,7 @@ import javax.persistence.Table;
             @NamedQuery(
                     name = "Produto.PorId",
                     query = "SELECT p FROM Produto p WHERE p.idProduto = :idProduto"
-            )
-            ,
-            @NamedQuery(
-                    name = "Produto.PorDescricao",
-                    query = "SELECT p FROM Produto p WHERE p.descricao = :descricao"
-            )
-            ,
-            @NamedQuery(
-                    name = "Produto.PorIdArtesao",
-                    query = "SELECT p FROM Produto p WHERE p.artesao.idUsuario = :idArtesao"
-            )
+            )            
         }
 )
 public class Produto implements Serializable {
@@ -79,7 +69,7 @@ public class Produto implements Serializable {
         return artesao;
     }
 
-    public void setArtesao(Artesao artsao) {
+    public void setArtesao(Artesao artesao) {
         this.artesao = artesao;
     }
 }
