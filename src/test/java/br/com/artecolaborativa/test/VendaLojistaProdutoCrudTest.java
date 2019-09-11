@@ -50,7 +50,7 @@ public class VendaLojistaProdutoCrudTest extends GenericTest {
         queryVenda.setParameter("idProd", 3); // produto 3
         queryVenda.setParameter("idLoj", 1); // lojista 1
 
-        List<ProdutoEstoque> vendasProd = queryProdEst.getResultList();
+        List<VendaLojistaProduto> vendasProd = queryVenda.getResultList();
 
         assertEquals(vendasProd.isEmpty(), false);
 
