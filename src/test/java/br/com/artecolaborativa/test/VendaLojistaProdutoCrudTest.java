@@ -7,6 +7,8 @@ package br.com.artecolaborativa.test;
 
 import br.com.artecolaborativa.model.ProdutoEstoque;
 import br.com.artecolaborativa.model.VendaLojistaProduto;
+import br.com.artecolaborativa.test.GenericTest;
+import java.util.Date;
 import java.util.List;
 import javax.persistence.CacheRetrieveMode;
 import javax.persistence.TypedQuery;
@@ -21,7 +23,7 @@ import org.junit.Test;
 public class VendaLojistaProdutoCrudTest extends GenericTest {
 
     @Test
-    public void createVendaLojistaProduto() {
+    public void createVendaLojistaProduto(){
 
         logger.info("Executando createVendaLojistaProduto()");
 
@@ -58,9 +60,61 @@ public class VendaLojistaProdutoCrudTest extends GenericTest {
 
     @Test
     public void updateVendaLojistaProduto() {
+        Integer quant = 3;
+        TypedQuery<VendaLojistaProduto> queryVenda = em.createNamedQuery("VendaLojistaProduto.PorPId", VendaLojistaProduto.class);
+        queryVenda.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
+        queryVenda.setParameter("idVenda", 7); 
+        VendaLojistaProduto vendasProd = (VendaLojistaProduto) queryVenda.getSingleResult();
 
+        assertNotNull(vendasProd);
         
+        vendasProd.setQuantidade(quant);
+        
+        em.flush();
+        
+        vendasProd = (VendaLojistaProduto) queryVenda.getSingleResult();
+        
+        assertEquals(vendasProd.getQuantidade(), quant);
         
     }
+    
+     @Test
+    public void updateVendaLojistaProdutoMerge() {
+        Date dataVenda = getData(9, 11, 2019);
+        TypedQuery<VendaLojistaProduto> queryVenda = em.createNamedQuery("VendaLojistaProduto.PorPId", VendaLojistaProduto.class);
+        queryVenda.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
+        queryVenda.setParameter("idVenda", 8); 
+        VendaLojistaProduto vendasProd = (VendaLojistaProduto) queryVenda.getSingleResult();
 
+        assertNotNull(vendasProd);
+        
+        vendasProd.setDataVenda(dataVenda);
+        
+        em.clear();
+        em.merge(vendasProd);
+        em.flush();
+        
+        assertEquals(queryVenda.getSingleResult().getDataVenda(), dataVenda);
+        
+    
+    }
+    
+        
+    @Test
+    public void deleteProdutoEstoque() {
+        
+        TypedQuery<VendaLojistaProduto> queryVenda = em.createNamedQuery("VendaLojistaProduto.PorPId", VendaLojistaProduto.class);
+        queryVenda.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
+        queryVenda.setParameter("idVenda", 9); 
+        VendaLojistaProduto vendaProd = (VendaLojistaProduto) queryVenda.getSingleResult();
+
+        assertNotNull(vendaProd);
+    
+        em.remove(vendaProd);
+        em.flush();
+
+        assertEquals(0, queryVenda.getResultList().size());
+
+    }
+    
 }

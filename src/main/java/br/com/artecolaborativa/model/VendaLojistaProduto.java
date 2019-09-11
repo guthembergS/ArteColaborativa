@@ -27,6 +27,10 @@ import javax.persistence.TemporalType;
             @NamedQuery(
                     name = "VendaLojistaProduto.PorParametros",
                     query = "SELECT v FROM VendaLojistaProduto v WHERE v.produtoEstoque.produto.idProduto = :idProd and v.produtoEstoque.lojista.idUsuario = :idLoj"
+            ),
+            @NamedQuery(
+                    name = "VendaLojistaProduto.PorPId",
+                    query = "SELECT v FROM VendaLojistaProduto v WHERE v.idVendaLojista = :idVenda"
             )
         }
 )
