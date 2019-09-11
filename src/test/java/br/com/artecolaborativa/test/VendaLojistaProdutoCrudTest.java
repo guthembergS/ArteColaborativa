@@ -22,46 +22,45 @@ public class VendaLojistaProdutoCrudTest extends GenericTest {
 
     @Test
     public void createVendaLojistaProduto() {
+
         logger.info("Executando createVendaLojistaProduto()");
-        
+
         VendaLojistaProduto novaVenda = new VendaLojistaProduto();
+
+        int quantidadeBaixa = 2;
+
         //produto estoque
         TypedQuery<ProdutoEstoque> queryProdEst = em.createNamedQuery("ProdutoEstoque.PorProdLojista", ProdutoEstoque.class);
         queryProdEst.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
-        queryProdEst.setParameter("idProduto", 3); // produto 14
-        queryProdEst.setParameter("idUsuario", 1); // lojista 2
-        ProdutoEstoque prodEstAtual = (ProdutoEstoque) queryProdEst.getSingleResult();
-        
-        assertNotNull(prodEstAtual);
-        
-        novaVenda.setProdutoEstoque(prodEstAtual);
-        novaVenda.setDataVenda(getData(9, 10, 2019));
-        novaVenda.setQuantidade(2);
-        
-        em.flush();
-        
-        
-        TypedQuery<VendaLojistaProduto> queryVenda = em.createNamedQuery("VendaLojistaProduto.PorParametros", VendaLojistaProduto.class);
-        queryVenda.setParameter("idProd", 3); // produto 14
-        queryProdEst.setParameter("idLoj", 1); // lojista 2
-        List<ProdutoEstoque> vendasProd = queryProdEst.getResultList();
-        
-        assertEquals(vendasProd.isEmpty(),false);
-    }
+        queryProdEst.setParameter("idProduto", 3); // produto 3
+        queryProdEst.setParameter("idUsuario", 1); // lojista 1
 
-    @Test
-    public void readVendaLojistaProduto() {
+        ProdutoEstoque prodEstAtual = (ProdutoEstoque) queryProdEst.getSingleResult();
+
+        assertNotNull(prodEstAtual);
+
+        novaVenda.setProdutoEstoque(prodEstAtual);
+        novaVenda.setDataVenda(getData(9, 11, 2019));
+        novaVenda.setQuantidade(quantidadeBaixa);
+
+        em.persist(novaVenda);
+        em.flush();
+
+        TypedQuery<VendaLojistaProduto> queryVenda = em.createNamedQuery("VendaLojistaProduto.PorParametros", VendaLojistaProduto.class);
+        queryVenda.setParameter("idProd", 3); // produto 3
+        queryVenda.setParameter("idLoj", 1); // lojista 1
+
+        List<ProdutoEstoque> vendasProd = queryProdEst.getResultList();
+
+        assertEquals(vendasProd.isEmpty(), false);
 
     }
 
     @Test
     public void updateVendaLojistaProduto() {
 
-    }
-
-    @Test
-    public void deleteVendaLojistaProduto() {
-
+        
+        
     }
 
 }
