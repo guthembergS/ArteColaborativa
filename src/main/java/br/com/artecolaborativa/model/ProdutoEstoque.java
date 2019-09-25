@@ -18,6 +18,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import static javax.swing.text.StyleConstants.Size;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  *
@@ -34,11 +37,11 @@ import javax.persistence.Table;
         }
 )
 public class ProdutoEstoque implements Serializable{
+
     @Id
     @Column(name = "ID_PRODUTO_ESTOQUE")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long idProdutoEstoque;
-    @Size (max = 30)
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "ID_PRODUTO", referencedColumnName = "ID_PRODUTO",nullable = false )
@@ -47,6 +50,7 @@ public class ProdutoEstoque implements Serializable{
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "ID_LOJISTA", referencedColumnName = "ID_USUARIO",nullable = false )
     protected Lojista lojista;
+  
     @NotNull
     @Column(name = "QUANTIDADE")
     protected Integer quantidade;
