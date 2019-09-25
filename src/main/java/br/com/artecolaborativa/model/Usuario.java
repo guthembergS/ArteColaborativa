@@ -19,16 +19,24 @@ public class Usuario implements Serializable {
     @Column(name = "ID_USUARIO")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long idUsuario;
-
+    @NotBlank
+    @NotNull
+    @Size (max = 50)
     @Column(name = "NOME")
     protected String nome;
-
+    @NotBlank
+    @NotNull
+    @Size (min = 3,max = 20)
+    @Pattern (regexp = "((?=.*\\p{Digit}) (?=.*\\p{Lower}) (?=.*\\p{Upper}).{3,30})")
     @Column(name = "SENHA")
     protected String senha;
-
+    @Email
+    @NotBlank
+    @NotNull
+    @Size (max = 35)
     @Column(name = "EMAIL")
     protected String email;
-
+    
     public void setEmail(String email) {
         this.email = email;
     }

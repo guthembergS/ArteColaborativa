@@ -38,7 +38,8 @@ public class ProdutoEstoque implements Serializable{
     @Column(name = "ID_PRODUTO_ESTOQUE")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long idProdutoEstoque;
-    
+    @Size (max = 30)
+
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "ID_PRODUTO", referencedColumnName = "ID_PRODUTO",nullable = false )
     protected Produto produto;
@@ -46,7 +47,7 @@ public class ProdutoEstoque implements Serializable{
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "ID_LOJISTA", referencedColumnName = "ID_USUARIO",nullable = false )
     protected Lojista lojista;
-    
+    @NotNull
     @Column(name = "QUANTIDADE")
     protected Integer quantidade;
     

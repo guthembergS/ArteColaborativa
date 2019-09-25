@@ -15,23 +15,23 @@
     <!-- Usuários  -->    
     <!-- Lojista -->
     <!-- 1 --> 
-    <USUARIO ID_USUARIO="1" DTYPE="L" EMAIL="ciranda.coletiva@gmail.com" NOME="Ciranda Coletiva" SENHA="ciranda123" VL_ALUGUEL="50.00" TAXA_VENDA="20.00" ID_ENDERECO="1"/> 
+    <USUARIO ID_USUARIO="1" DTYPE="L" EMAIL="ciranda.coletiva@gmail.com" NOME="Ciranda Coletiva" SENHA="Ciranda123" VL_ALUGUEL="50.00" TAXA_VENDA="20.00" ID_ENDERECO="1"/> 
     <!-- 2 --> 
-    <USUARIO ID_USUARIO="2" DTYPE="L" EMAIL="horta.int@gmail.com" NOME="Horta Intinerante" SENHA="horta123" VL_ALUGUEL="30.00" TAXA_VENDA="20.00" ID_ENDERECO="2"/>    
+    <USUARIO ID_USUARIO="2" DTYPE="L" EMAIL="horta.int@gmail.com" NOME="Horta Intinerante" SENHA="Horta123" VL_ALUGUEL="30.00" TAXA_VENDA="20.00" ID_ENDERECO="2"/>    
     <!-- 8 --> 
-    <USUARIO ID_USUARIO="8" DTYPE="L" EMAIL="usuarioDeleteLojista@gmail.com" NOME="Lojista Deletado" SENHA="horta123" VL_ALUGUEL="100.00" TAXA_VENDA="25.00" ID_ENDERECO="4"/>    
+    <USUARIO ID_USUARIO="8" DTYPE="L" EMAIL="usuarioDeleteLojista@gmail.com" NOME="Lojista Deletado" SENHA="Horta123" VL_ALUGUEL="100.00" TAXA_VENDA="25.00" ID_ENDERECO="4"/>    
     
     <!-- Artesão -->
     <!-- 3 --> 
-    <USUARIO ID_USUARIO="3" DTYPE="A" EMAIL="moemasouza25@gmail.com" NOME="Moema Souza" SENHA="moema123" MARCA="Arteliê Obinrin"/>
+    <USUARIO ID_USUARIO="3" DTYPE="A" EMAIL="moemasouza25@gmail.com" NOME="Moema Souza" SENHA="mOema123" MARCA="Arteliê Obinrin"/>
     <!-- 4 -->
-    <USUARIO ID_USUARIO="4" DTYPE="A" EMAIL="thais.linhas@gmail.com" NOME="Thais Souza" SENHA="thais123" MARCA="Entre Linhas e Versos"/>
+    <USUARIO ID_USUARIO="4" DTYPE="A" EMAIL="thais.linhas@gmail.com" NOME="Thais Souza" SENHA="tHais123" MARCA="Entre Linhas e Versos"/>
     <!-- 5 --> 
-    <USUARIO ID_USUARIO="5" DTYPE="A" EMAIL="ana.arts@gmail.com" NOME="Ana Ribeiro" SENHA="ana123" MARCA="Fulô Arts"/>
+    <USUARIO ID_USUARIO="5" DTYPE="A" EMAIL="ana.arts@gmail.com" NOME="Ana Ribeiro" SENHA="aNa123" MARCA="Fulô Arts"/>
     <!-- 6 -->     
-    <USUARIO ID_USUARIO="6" DTYPE="A" EMAIL="ojuara@gmail.com" NOME="Ojuara Silva" SENHA="ojuara123" MARCA="Ojuara Cactos"/>
+    <USUARIO ID_USUARIO="6" DTYPE="A" EMAIL="ojuara@gmail.com" NOME="Ojuara Silva" SENHA="oJuara123" MARCA="Ojuara Cactos"/>
     <!-- 7 -->     
-    <USUARIO ID_USUARIO="7" DTYPE="A" EMAIL="jesse.papelaria@gmail.com" NOME="Jesse Oliveira" SENHA="papelarte" MARCA="Arte em Papel"/>
+    <USUARIO ID_USUARIO="7" DTYPE="A" EMAIL="jesse.papelaria@gmail.com" NOME="Jesse Oliveira" SENHA="Papelarte" MARCA="Arte em Papel"/>
     
     
         <!-- Lista de Produtos Artesão ID 1 -->
