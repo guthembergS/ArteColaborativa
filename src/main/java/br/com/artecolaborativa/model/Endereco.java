@@ -1,6 +1,7 @@
 package br.com.artecolaborativa.model;
 
 import java.io.Serializable;
+import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 /**
  *
@@ -15,6 +17,7 @@ import javax.persistence.NamedQuery;
  */
 
 @Entity
+@Table(name="ENDERECO")
 @NamedQueries(
         {
             @NamedQuery(
@@ -47,6 +50,24 @@ public class Endereco implements Serializable{
     
     @Column(name = "NUMERO")
     protected String numero;
+    
+    @Override
+    public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
+        if (!(object instanceof Endereco)) {
+            return false;
+        }
+        Endereco other = (Endereco) object;
+        if ((this.idEndereco == null && other.idEndereco != null) || (this.idEndereco != null && !this.idEndereco.equals(other.idEndereco))) {
+            return false;
+        }
+        return true;
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
+    }
     
     public String getLogadouro() {
         return logadouro;

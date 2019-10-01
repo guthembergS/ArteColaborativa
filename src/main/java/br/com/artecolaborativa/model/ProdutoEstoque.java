@@ -7,6 +7,7 @@ package br.com.artecolaborativa.model;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -56,6 +57,24 @@ public class ProdutoEstoque implements Serializable{
     @Min(value=0)
     @Column(name = "QUANTIDADE")
     protected Integer quantidade;
+    
+    @Override
+    public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
+        if (!(object instanceof ProdutoEstoque)) {
+            return false;
+        }
+        ProdutoEstoque other = (ProdutoEstoque) object;
+        if ((this.idProdutoEstoque == null && other.idProdutoEstoque != null) || (this.idProdutoEstoque != null && !this.idProdutoEstoque.equals(other.idProdutoEstoque))) {
+            return false;
+        }
+        return true;
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(getIdProdutoEstoque());
+    }
     
     public void setProduto(Produto produto){
         this.produto = produto;

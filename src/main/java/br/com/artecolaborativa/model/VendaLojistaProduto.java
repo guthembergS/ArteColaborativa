@@ -2,6 +2,7 @@ package br.com.artecolaborativa.model;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -53,6 +54,24 @@ public class VendaLojistaProduto implements Serializable{
     @Column(name="QUANTIDADE")
     @Min(value=1)
     protected Integer quantidade;
+    
+    @Override
+    public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
+        if (!(object instanceof VendaLojistaProduto)) {
+            return false;
+        }
+        VendaLojistaProduto other = (VendaLojistaProduto) object;
+        if ((this.idVendaLojista == null && other.idVendaLojista != null) || (this.idVendaLojista != null && !this.idVendaLojista.equals(other.idVendaLojista))) {
+            return false;
+        }
+        return true;
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(getIdVenda());
+    }
     
     public Long getIdVenda(){
         return idVendaLojista;
