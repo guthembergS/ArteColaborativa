@@ -15,6 +15,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.Min;
 
 /**
  *
@@ -50,6 +51,7 @@ public class VendaLojistaProduto implements Serializable{
     protected Date dataVenda;
     
     @Column(name="QUANTIDADE")
+    @Min(value=1)
     protected Integer quantidade;
     
     public Long getIdVenda(){

@@ -19,6 +19,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import static javax.swing.text.StyleConstants.Size;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -52,6 +53,7 @@ public class ProdutoEstoque implements Serializable{
     protected Lojista lojista;
   
     @NotNull
+    @Min(value=0)
     @Column(name = "QUANTIDADE")
     protected Integer quantidade;
     
